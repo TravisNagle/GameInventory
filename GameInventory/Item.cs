@@ -25,7 +25,20 @@ namespace GameInventory
 
         public override string ToString()
         {
-            return base.ToString();
+            string info = "";
+            if (Rarity != RarityType.COMMON)
+            {
+                info += $"\nItem Name: {Rarity} {Name}";
+            }
+            else
+            {
+                info += $"\nItem Name: {Name}";
+            }
+
+            info += $"\nDescription: {Description}";
+            info += $"\nWeight: {Weight} pounds";
+            info += $"\n${Value}";
+            return info;
         }
     }
 }
