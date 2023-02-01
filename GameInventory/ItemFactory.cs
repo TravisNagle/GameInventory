@@ -10,7 +10,12 @@ namespace GameInventory
     {
         public Clue MakeRandomClue()
         {
-            return null;
+            Random rand = new Random();
+            int randomValue = rand.Next(0, 5);
+
+            Clue clue = new Clue("", "", RarityType.COMMON, -1, -1, false, "");
+
+            return clue;
         }
 
         public Clue MakeRandomClue(bool isAccurate, string inciminate)
@@ -20,7 +25,23 @@ namespace GameInventory
 
         public Item MakeRandomItem()
         {
-            return null;
+            Random rand = new Random();
+            int newItemChoice = rand.Next(1, 11);
+            Item item;
+            if(newItemChoice % 2 == 0 && newItemChoice <= 5)
+            {
+                item = MakeRandomWeapon(RarityType.COMMON);
+            }
+            else if(newItemChoice % 2 == 0 && newItemChoice > 5)
+            {
+                item = MakeRandomWeapon(RarityType.RARE);
+            }
+            else
+            {
+                item = MakeRandomClue();
+            }
+
+            return item;
         }
 
         public Weapon MakeRandomWeapon(RarityType rarity)
