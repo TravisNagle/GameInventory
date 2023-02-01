@@ -19,7 +19,11 @@ namespace GameInventory
 
         public override string ToString()
         {
-            return base.ToString();
+            string info = "";
+            info += base.ToString();
+            info += $"\nDamage Type: {DamageType}";
+            info += $"\nDamage Dealt: {Damage} health points";
+            return info;
         }
     }
 }
