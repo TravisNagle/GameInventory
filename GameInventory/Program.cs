@@ -18,8 +18,11 @@
             //Console.WriteLine(item);
             //Console.WriteLine(item2);
             //Console.WriteLine(weapon);
-            //Console.WriteLine(pack.ListWeapons());
+            Console.WriteLine(pack.ListWeapons());
             Console.WriteLine(pack.ListClues());
+
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine(pack.ListItems());
         }
     }
 }

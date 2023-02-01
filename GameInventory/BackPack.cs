@@ -22,7 +22,7 @@ namespace GameInventory
 
         public string ListClues()
         {
-            string clueFormat = "Clues--------------------------------------------------";
+            string clueFormat = $"\nClues--------------------------------------------------";
             foreach (Item item in Contents)
             {
                 if (item is Clue && !(item is Weapon))
@@ -41,7 +41,7 @@ namespace GameInventory
 
         public string ListWeapons()
         {
-            string weaponFormat = "Weapons--------------------------------------------------";
+            string weaponFormat = $"\nWeapons--------------------------------------------------";
             foreach(Item item in Contents)
             {
                 if(item is Weapon)
