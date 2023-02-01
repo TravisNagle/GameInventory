@@ -24,5 +24,15 @@ namespace GameInventory
         {
             return null;
         }
+
+        public string ListItems()
+        {
+            return null;
+        }
+
+        public string ListWeapons()
+        {
+            return null;
+        }
     }
 }
