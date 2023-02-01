@@ -8,5 +8,21 @@ namespace GameInventory
 {
     internal class BackPack
     {
+        private List<Item> Contents { get; set; }
+
+        public BackPack()
+        {
+
+        }
+
+        public void Add(Item item)
+        {
+
+        }
+
+        public string ListClues()
+        {
+            return null;
+        }
     }
 }
