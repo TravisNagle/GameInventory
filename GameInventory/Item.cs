@@ -28,11 +28,11 @@ namespace GameInventory
             string info = "";
             if (Rarity != RarityType.COMMON)
             {
-                info += $"\nItem Name: {Rarity} {Name}";
+                info += $"Item Name: {Rarity} {Name}";
             }
             else
             {
-                info += $"\nItem Name: {Name}";
+                info += $"Item Name: {Name}";
             }
 
             info += $"\nDescription: {Description}";

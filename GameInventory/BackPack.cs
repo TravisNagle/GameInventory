@@ -12,12 +12,12 @@ namespace GameInventory
 
         public BackPack()
         {
-
+            Contents = new List<Item>();
         }
 
         public void Add(Item item)
         {
-
+            Contents.Add(item);
         }
 
         public string ListClues()
@@ -27,12 +27,21 @@ namespace GameInventory
 
         public string ListItems()
         {
-            return null;
+            string itemList = "";
+            itemList += ListClues();
+            itemList += ListWeapons();
+            return itemList;
         }
 
         public string ListWeapons()
         {
-            return null;
+            string weaponFormat = "Weapons--------------------------------------------------";
+            foreach(Item item in Contents)
+            {
+                if(item is Weapon)
+                    weaponFormat += $"\n{item}";
+            }
+            return weaponFormat;
         }
     }
 }

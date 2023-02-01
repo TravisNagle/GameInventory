@@ -7,10 +7,16 @@
             Item item = new Item("Gaming", "Gamer", RarityType.COMMON, 1.5, 105.3);
             Item item2 = new Item("Rare type item", "Thing", RarityType.RARE, 200, 1054);
             Weapon weapon = new Weapon("Its big", "Big Axe", RarityType.UNCOMMON, 400, 205.5, 50, DamageType.SLASHING);
+            BackPack pack = new BackPack();
 
-            Console.WriteLine(item);
-            Console.WriteLine(item2);
-            Console.WriteLine(weapon);
+            pack.Add(item);
+            pack.Add(item2);
+            pack.Add(weapon);
+
+            //Console.WriteLine(item);
+            //Console.WriteLine(item2);
+            //Console.WriteLine(weapon);
+            Console.WriteLine(pack.ListWeapons());
         }
     }
 }
