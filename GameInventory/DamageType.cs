@@ -8,5 +8,8 @@ namespace GameInventory
 {
     enum DamageType
     {
+        SLASHING,
+        PIERCING,
+        BLUDGEONING
     }
 }
