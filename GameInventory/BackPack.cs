@@ -22,7 +22,13 @@ namespace GameInventory
 
         public string ListClues()
         {
-            return null;
+            string clueFormat = "Clues--------------------------------------------------";
+            foreach (Item item in Contents)
+            {
+                if (item is Clue && !(item is Weapon))
+                    clueFormat += $"\n{item}";
+            }
+            return clueFormat;
         }
 
         public string ListItems()
