@@ -8,5 +8,8 @@ namespace GameInventory
 {
     enum RarityType
     {
+        COMMON,
+        UNCOMMON,
+        RARE
     }
 }
