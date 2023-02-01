@@ -37,7 +37,7 @@ namespace GameInventory
 
             info += $"\nDescription: {Description}";
             info += $"\nWeight: {Weight} pounds";
-            info += $"\n${Value}";
+            info += $"\nValue: ${Value}";
             return info;
         }
     }
