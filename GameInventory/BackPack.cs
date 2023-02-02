@@ -15,20 +15,34 @@ using System.Threading.Tasks;
 
 namespace GameInventory
 {
+    /// <summary>
+    /// Implementation of the BackPack class that stores Item values to a list
+    /// </summary>
     internal class BackPack
     {
         private List<Item> Contents { get; set; }
 
+        /// <summary>
+        /// Default constructor that creates a new empty list
+        /// </summary>
         public BackPack()
         {
             Contents = new List<Item>();
         }
 
+        /// <summary>
+        /// Add method that adds the input into the Contents list
+        /// </summary>
+        /// <param name="item">Inputted item</param>
         public void Add(Item item)
         {
             Contents.Add(item);
         }
 
+        /// <summary>
+        /// Displays all Clue items in the list
+        /// </summary>
+        /// <returns>String of all clues</returns>
         public string ListClues()
         {
             string clueFormat = $"\nClues--------------------------------------------------";
@@ -40,6 +54,10 @@ namespace GameInventory
             return clueFormat;
         }
 
+        /// <summary>
+        /// Displays all the items in the list
+        /// </summary>
+        /// <returns>String of all items</returns>
         public string ListItems()
         {
             string itemList = "";
@@ -48,6 +66,10 @@ namespace GameInventory
             return itemList;
         }
 
+        /// <summary>
+        /// Displays all the weapons in the list
+        /// </summary>
+        /// <returns>String of all weapons</returns>
         public string ListWeapons()
         {
             string weaponFormat = $"\nWeapons--------------------------------------------------";
