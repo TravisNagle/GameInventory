@@ -26,7 +26,7 @@ namespace GameInventory
             foreach (Item item in Contents)
             {
                 if (item is Clue && !(item is Weapon))
-                    clueFormat += $"\n{item}";
+                    clueFormat += $"\n{item}\n";
             }
             return clueFormat;
         }
@@ -45,7 +45,7 @@ namespace GameInventory
             foreach(Item item in Contents)
             {
                 if(item is Weapon)
-                    weaponFormat += $"\n{item}";
+                    weaponFormat += $"\n{item}\n";
             }
             return weaponFormat;
         }
