@@ -158,6 +158,14 @@ namespace GameInventory
             return weapon;
         }
 
+        /// <summary>
+        /// Overloads the MakeRandomWeapon method to allow for inputs for accuracy
+        /// and the incriminated person
+        /// </summary>
+        /// <param name="rarity">The rarity of the item</param>
+        /// <param name="isAccurate">If the weapon is an accurate clue</param>
+        /// <param name="incriminate">Which person is incriminated</param>
+        /// <returns>A randomized weapon</returns>
         public Weapon MakeRandomWeapon(RarityType rarity, bool isAccurate, string incriminate)
         {
             Random rand = new Random();
