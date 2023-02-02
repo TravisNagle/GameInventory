@@ -2,7 +2,7 @@
 //
 // Author: Travis Nagle, Naglet@etsu.edu
 // Course: CSCI-2210-001 - Data Structures
-// Assignment: Project 1 - Game Inventory
+// Assignment: Project 1 - GameInventory
 // Description: Class that handles random item generation
 //
 ///////////////////////////////////////////////////////////////////////////////
