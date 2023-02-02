@@ -15,8 +15,16 @@ using System.Threading.Tasks;
 
 namespace GameInventory
 {
+    /// <summary>
+    /// Implementation of the ItemFactory class that creates random clues, weapons, and items
+    /// with some basic specifications
+    /// </summary>
     internal class ItemFactory
     {
+        /// <summary>
+        /// Creates a clue with random parameters used to fill in the backpack
+        /// </summary>
+        /// <returns>A random clue</returns>
         public Clue MakeRandomClue()
         {
             Random rand = new Random();
@@ -49,6 +57,13 @@ namespace GameInventory
             return clue;
         }
 
+        /// <summary>
+        /// Overloads the MakeRandomClue() method to allow for inputting the accuracy
+        /// and the incriminated figure
+        /// </summary>
+        /// <param name="isAccurate">If the clue is accurate</param>
+        /// <param name="incriminate">Which person is incriminated</param>
+        /// <returns>The random clue</returns>
         public Clue MakeRandomClue(bool isAccurate, string incriminate)
         {
             Random rand = new Random();
