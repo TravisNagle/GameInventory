@@ -112,7 +112,7 @@ namespace GameInventory
             switch (randomValue)
             {
                 case 0:
-                    weapon = new Weapon("A large candlestick", "Rope", rarity, 5.0, 3.5, 5, DamageType.BLUDGEONING, false, "Dr. Orchid");
+                    weapon = new Weapon("A large candlestick", "Candlestick", rarity, 5.0, 3.5, 5, DamageType.BLUDGEONING, false, "Dr. Orchid");
                     break;
                 case 1:
                     weapon = new Weapon("A small dagger", "Dagger", rarity, 10.5, 5.5, 15, DamageType.SLASHING, true, "Colonel Mustard"); 
