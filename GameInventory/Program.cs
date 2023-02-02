@@ -11,6 +11,8 @@
             BackPack pack = new BackPack();
             ItemFactory factory = new ItemFactory();
             pack.Add(factory.MakeRandomClue());
+            pack.Add(factory.MakeRandomWeapon(RarityType.COMMON));
+            pack.Add(factory.MakeRandomWeapon(RarityType.RARE, true, "Colonel Mustard"));
 
 
             pack.Add(item);

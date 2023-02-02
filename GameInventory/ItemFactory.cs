@@ -104,12 +104,66 @@ namespace GameInventory
 
         public Weapon MakeRandomWeapon(RarityType rarity)
         {
-            return null;
+            Random rand = new Random();
+            int randomValue = rand.Next(0, 5);
+
+            Weapon weapon = new Weapon("", "", rarity, -1, -1, 0, DamageType.SLASHING, false, "");
+
+            switch (randomValue)
+            {
+                case 0:
+                    weapon = new Weapon("A large candlestick", "Rope", rarity, 5.0, 3.5, 5, DamageType.BLUDGEONING, false, "Dr. Orchid");
+                    break;
+                case 1:
+                    weapon = new Weapon("A small dagger", "Dagger", rarity, 10.5, 5.5, 15, DamageType.SLASHING, true, "Colonel Mustard"); 
+                    break;
+                case 2:
+                    weapon = new Weapon("A heavy wrench", "Wrench", rarity, 6.99, 8.0, 10, DamageType.BLUDGEONING, false, "Mrs. Peacock");
+                    break;
+                case 3:
+                    weapon = new Weapon("An empty revolver", "Revolver", rarity, 25.0, 6.0, 20, DamageType.PIERCING, true, "Prof. Plum");
+                    break;
+                case 4:
+                    weapon = new Weapon("A long metal pipe", "Pipe", rarity, 2.5, 3.5, 7, DamageType.BLUDGEONING, false, "Miss Scarlet");
+                    break;
+                case 5:
+                    weapon = new Weapon("A bloodied CLUE boardgame", "CLUE (Boardgame)", rarity, 19.99, 5.0, 5, DamageType.BLUDGEONING, true, "Mr. Green");
+                    break;
+            }
+
+            return weapon;
         }
 
         public Weapon MakeRandomWeapon(RarityType rarity, bool isAccurate, string incriminate)
         {
-            return null;
+            Random rand = new Random();
+            int randomValue = rand.Next(0, 5);
+
+            Weapon weapon = new Weapon("", "", rarity, -1, -1, 0, DamageType.SLASHING, false, "");
+
+            switch (randomValue)
+            {
+                case 0:
+                    weapon = new Weapon("A large candlestick", "Rope", rarity, 5.0, 3.5, 5, DamageType.BLUDGEONING, isAccurate, incriminate);
+                    break;
+                case 1:
+                    weapon = new Weapon("A small dagger", "Dagger", rarity, 10.5, 5.5, 15, DamageType.SLASHING, isAccurate, incriminate);
+                    break;
+                case 2:
+                    weapon = new Weapon("A heavy wrench", "Wrench", rarity, 6.99, 8.0, 10, DamageType.BLUDGEONING, isAccurate, incriminate);
+                    break;
+                case 3:
+                    weapon = new Weapon("An empty revolver", "Revolver", rarity, 25.0, 6.0, 20, DamageType.PIERCING, isAccurate, incriminate);
+                    break;
+                case 4:
+                    weapon = new Weapon("A long metal pipe", "Pipe", rarity, 2.5, 3.5, 7, DamageType.BLUDGEONING, isAccurate, incriminate);
+                    break;
+                case 5:
+                    weapon = new Weapon("A bloodied CLUE boardgame", "CLUE (Boardgame)", rarity, 19.99, 5.0, 5, DamageType.BLUDGEONING, isAccurate, incriminate);
+                    break;
+            }
+
+            return weapon;
         }
     }
 }
