@@ -22,7 +22,7 @@ namespace GameInventory
     internal class ItemFactory
     {
         /// <summary>
-        /// Creates a clue with random parameters used to fill in the backpack
+        /// Creates a clue with random attributes used to fill in the backpack
         /// </summary>
         /// <returns>A random clue</returns>
         public Clue MakeRandomClue()
@@ -121,6 +121,11 @@ namespace GameInventory
             return item;
         }
 
+        /// <summary>
+        /// Makes a weapon with random attributes
+        /// </summary>
+        /// <param name="rarity">The rarity of the weapon</param>
+        /// <returns>A random weapon</returns>
         public Weapon MakeRandomWeapon(RarityType rarity)
         {
             Random rand = new Random();
