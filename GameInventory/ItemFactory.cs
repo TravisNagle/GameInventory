@@ -1,4 +1,13 @@
-﻿using System;
+﻿///////////////////////////////////////////////////////////////////////////////
+//
+// Author: Travis Nagle, Naglet@etsu.edu
+// Course: CSCI-2210-001 - Data Structures
+// Assignment: Project 1 - Game Inventory
+// Description: Class that handles random item generation
+//
+///////////////////////////////////////////////////////////////////////////////
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
