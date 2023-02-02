@@ -15,6 +15,9 @@ using System.Threading.Tasks;
 
 namespace GameInventory
 {
+    /// <summary>
+    /// Enum that allows for three damage types
+    /// </summary>
     enum DamageType
     {
         SLASHING,
