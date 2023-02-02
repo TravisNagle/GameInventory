@@ -96,6 +96,10 @@ namespace GameInventory
             return clue;
         }
 
+        /// <summary>
+        /// Makes a random weapon or clue used to fill the backpack
+        /// </summary>
+        /// <returns>A random item</returns>
         public Item MakeRandomItem()
         {
             Random rand = new Random();
