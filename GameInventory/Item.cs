@@ -15,6 +15,9 @@ using System.Threading.Tasks;
 
 namespace GameInventory
 {
+    /// <summary>
+    /// Implementation of the Item class that creates objects to fill the backpack
+    /// </summary>
     internal class Item
     {
         protected string Description { get; set; }
@@ -23,6 +26,15 @@ namespace GameInventory
         protected double Value { get; set; }
         protected double Weight { get; set; }
 
+        /// <summary>
+        /// Paramaterized constructor that is used to create different base parameters
+        /// for the Weapon and Clue subclasses
+        /// </summary>
+        /// <param name="description">Description of the item</param>
+        /// <param name="name">Name of the item</param>
+        /// <param name="rarity">Rarity value of the item</param>
+        /// <param name="value">Monetary value of the item</param>
+        /// <param name="weight">Weight of the item</param>
         public Item(string description, string name, RarityType rarity, double value, double weight)
         {
             Description = description;
@@ -32,6 +44,11 @@ namespace GameInventory
             Weight = weight;
         }
 
+        /// <summary>
+        /// Converts Item to a string and checks for rarity value
+        /// to set rarity's greater than COMMON as the prefix to the item name
+        /// </summary>
+        /// <returns>Item as a string listed vertically</returns>
         public override string ToString()
         {
             string info = "";
