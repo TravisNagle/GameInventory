@@ -103,13 +103,17 @@ namespace GameInventory
         public Item MakeRandomItem()
         {
             Random rand = new Random();
-            int newItemChoice = rand.Next(1, 11);
+            int newItemChoice = rand.Next(0, 18);
             Item item;
-            if(newItemChoice % 2 == 0 && newItemChoice <= 5)
+            if(newItemChoice <= 2)
             {
                 item = MakeRandomWeapon(RarityType.COMMON);
             }
-            else if(newItemChoice % 2 == 0 && newItemChoice > 5)
+            else if(newItemChoice > 2 && newItemChoice <= 5)
+            {
+                item = MakeRandomWeapon(RarityType.UNCOMMON);
+            }
+            else if(newItemChoice > 5 && newItemChoice <= 8)
             {
                 item = MakeRandomWeapon(RarityType.RARE);
             }
