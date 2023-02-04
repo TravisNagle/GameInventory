@@ -11,6 +11,11 @@ namespace GameInventory
 {
     internal class Program
     {
+        /// <summary>
+        /// Main method that fills the backpack with random items and displays
+        /// them to the user
+        /// </summary>
+        /// <param name="args">String array for command line parameters</param>
         static void Main(string[] args)
         {
             ItemFactory factory = new ItemFactory();
