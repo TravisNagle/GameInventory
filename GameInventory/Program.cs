@@ -9,6 +9,9 @@
 
 namespace GameInventory
 {
+    /// <summary>
+    /// Main class that displays the contents of the backpack to the console
+    /// </summary>
     internal class Program
     {
         /// <summary>
